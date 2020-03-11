@@ -14,8 +14,8 @@ public class Main {
                 sm = new StringMath(string);
             } catch (LengthException | NumException | OperatorException e) {
                 e.printStackTrace();
+                System.exit(0);
             }
-            assert sm != null;
             System.out.println(sm.Result());
         }
     }
